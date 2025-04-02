@@ -506,3 +506,83 @@ int main()
 
     return 0;
 }
+
+
+#include <iostream>
+
+int main()
+{
+    int x = 0;
+    int a;
+    std::cout << "Enter a number: ";
+    std::cin >> a;
+
+    while (a > 0)
+    {
+        x = x + a;
+        a -= 1;
+    }
+    std::cout << "The sum of "<< a << " natural is: " << x << '\n';
+}
+
+#include <iostream>
+
+int main()
+{
+    int a = 1;
+    int b;
+    std::cout << "Enter a number: ";
+    std::cin >> b;
+
+    if (b == 0)
+    {
+        std::cout << "The factorial is: 1 " << '\n';
+    }
+    else
+    {
+        do
+        {
+            a = a * b;
+            b -= 1;
+
+        } while (b > 0);
+        std::cout << "The factorial is: " << a << '\n';
+    }
+    
+    return 0;
+}
+
+#include <iostream>
+
+int main()
+{
+    int a = 0;
+    int b;
+
+    std::cout << "Enter a number: ";
+    std::cin >> b;
+
+    for (int i = 0; i < b; i++)
+    {
+        a += (b - i) * (b - i);
+    }
+
+    std::cout << "sum of sqware of n natural numbers is : " << a << '\n';
+
+    return 0;
+}
+
+#include <iostream>
+
+int main (){
+    for (int i = 0 ; ;i++){
+        if (i == 156){
+            break;
+        }
+        if (i % 2 != 0){
+            continue;
+        }
+        std:: cout << i +1 << '\n';
+
+    }
+}
