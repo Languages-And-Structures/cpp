@@ -17,9 +17,9 @@ This repository includes:
 
 ---
 
-## 🗂️ Directory Structure
+# 🗂️ Directory Structure
 
-# Fundamentals
+## Fundamentals
 Introduction
 Identifiers
 Keywords
@@ -34,7 +34,7 @@ Basics, Variables and Data Types
 Operator, Input Output
 Control Statements, Loops
 
-# Functions
+## Functions
 Functions
 Parameter Passing Techniques
 Default Arguments
@@ -43,7 +43,7 @@ Inline Functions
 Lambda Expression
 Quiz: Functions
 
-# Compound Data Types
+## Compound Data Types
 Arrays
 Pointers
 References
@@ -55,13 +55,13 @@ Quizzes:
 Array, Pointer, Reference
 Strings, Structure and Union
 
-# Dynamic Memory Management
+## Dynamic Memory Management
 Dynamic Memory Management
 new and delete Operators
 Memory Leak
 Quiz: Dynamic Memory Management
 
-# Object-Oriented Programming (OOP)
+## Object-Oriented Programming (OOP)
 Object Oriented Programming (OOP)
 Classes and Objects
 Encapsulation
@@ -70,19 +70,19 @@ Inheritance
 Abstraction
 Quiz: OOPs Quiz
 
-# Exception Handling
+## Exception Handling
 Exception Handling
 Exception Handling using Classes
 Stack Unwinding
 User-Defined Exceptions
 Quiz: Exception Handling Quiz
 
-# File Handling
+## File Handling
 Files and Streams
 I/O Redirection
 Quiz: File Handling Quiz
 
-# Standard Template Library (STL)
+## Standard Template Library (STL)
 Templates
 Standard Template Library (STL)
 Algorithms
@@ -95,7 +95,7 @@ Map
 Set
 Quiz: STL Quiz
 
-# 🧠 Advanced C++
+## Advanced C++
 Preprocessor
 Namespaces
 Smart Pointers
@@ -103,7 +103,7 @@ Callbacks
 Multithreading
 Signal Handling
 
-## 🛠️ Prerequisites
+# Prerequisites
 
 To run the examples in this repository, you will need:
 
