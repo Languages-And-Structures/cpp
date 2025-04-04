@@ -117,15 +117,16 @@ To run the examples in this repository, you will need:
 
 1. **Clone the repository**:
 
+   git clone https://github.com/Languages-And-Structures/cpp-dev cd cpp-learning
    git clone https://github.com/VOID-3560/cpp_codes/tree/core
    cd cpp-learning
    
-2. Compile and run a program:
+1. Compile and run a program:
    
    g++ 01_basics/hello_world.cpp -o hello
    ./hello
    
-3. Explore topics and experiment with code.
+2. Explore topics and experiment with code.
 
 
 **Contributions**
