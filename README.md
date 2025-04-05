@@ -20,88 +20,88 @@ This repository includes:
 # 🗂️ Directory Structure
 
 ## Fundamentals
-Introduction
-Identifiers
-Keywords
-Variables
-Data Types
-Operators
-Basic Input / Output
-Conditional Statements
-Loops
-Quizzes:
-Basics, Variables and Data Types
-Operator, Input Output
-Control Statements, Loops
+1. Introduction
+2. Identifiers
+3. Keywords
+4. Variables
+5. Data Types
+6. Operators
+7. Basic Input / Output
+8. Conditional Statements
+9. Loops
+10. Quizzes:
+11. Basics, Variables and Data Types
+12. Operator, Input Output
+13. Control Statements, Loops
 
 ## Functions
-Functions
-Parameter Passing Techniques
-Default Arguments
-Recursion
-Inline Functions
-Lambda Expression
-Quiz: Functions
+1. Functions
+2. Parameter Passing Techniques
+3. Default Arguments
+4. Recursion
+5. Inline Functions
+6. Lambda Expression
+7. Quiz: Functions
 
 ## Compound Data Types
-Arrays
-Pointers
-References
-Strings
-Structures
-Unions
-Enumeration
-Quizzes:
-Array, Pointer, Reference
-Strings, Structure and Union
+1. Arrays
+2. Pointers
+3. References
+4. Strings
+5. Structures
+6. Unions
+7. Enumeration
+8. Quizzes:
+9. Array, Pointer, Reference
+10. Strings, Structure and Union
 
 ## Dynamic Memory Management
-Dynamic Memory Management
-new and delete Operators
-Memory Leak
-Quiz: Dynamic Memory Management
+1. Dynamic Memory Management
+2. new and delete Operators
+3. Memory Leak
+4. Quiz: Dynamic Memory Management
 
 ## Object-Oriented Programming (OOP)
-Object Oriented Programming (OOP)
-Classes and Objects
-Encapsulation
-Polymorphism
-Inheritance
-Abstraction
-Quiz: OOPs Quiz
+1. Object Oriented Programming (OOP)
+2. Classes and Objects
+3. Encapsulation
+4. Polymorphism
+5. Inheritance
+6. Abstraction
+7. Quiz: OOPs Quiz
 
 ## Exception Handling
-Exception Handling
-Exception Handling using Classes
-Stack Unwinding
-User-Defined Exceptions
-Quiz: Exception Handling Quiz
+1. Exception Handling
+2. Exception Handling using Classes
+3. Stack Unwinding
+4. User-Defined Exceptions
+5. Quiz: Exception Handling Quiz
 
 ## File Handling
-Files and Streams
-I/O Redirection
-Quiz: File Handling Quiz
+1. Files and Streams
+2. I/O Redirection
+3. Quiz: File Handling Quiz
 
 ## Standard Template Library (STL)
-Templates
-Standard Template Library (STL)
-Algorithms
-Containers
-Iterators
-Vector
-Stack
-Queue
-Map
-Set
-Quiz: STL Quiz
+1. Templates
+2. Standard Template Library (STL)
+3. Algorithms
+4. Containers
+5. Iterators
+6. Vector
+7. Stack
+8. Queue
+9. Map
+10. Set
+11. Quiz: STL Quiz
 
 ## Advanced C++
-Preprocessor
-Namespaces
-Smart Pointers
-Callbacks
-Multithreading
-Signal Handling
+1. Preprocessor
+2. Namespaces
+3. Smart Pointers
+4. Callbacks
+5. Multithreading
+6. Signal Handling
 
 # Prerequisites
 
