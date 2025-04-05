@@ -836,3 +836,460 @@ int main()
     std::cout << "Area of the circle: " << area(radius) << std::endl; // function call to calculate area of circle
     std::cout << "Value of pi: " << pi << std::endl;                  // accessing global variable
 }
+
+#include <iostream>
+
+int main()
+{
+
+    std::string car[] = {"Toyota", "Honda", "Ford", "Chevrolet", "Nissan"};
+
+    // std::string is an object that manages memory dynamically
+    
+    // so we can use sizeof() to get the size of the array in bytes 
+    
+    // it does not return the length of the string’s content 
+    // (e.g., "Toyota" has 6 characters) but rather the fixed size of the 
+    // std::string object itself (which typically is around 32 bytes, 
+    // though this depends on the system and compiler).
+
+    std::cout << car[0] << '\n';
+    std::cout << car[1] << '\n';
+    std::cout << car[2] << '\n';
+    std::cout << car[3] << '\n';
+
+    std::cout << '\n';
+    std::cout << "........................................." << '\n';
+    std::cout << '\n';
+
+    int a = sizeof(car) / sizeof(car[0]);
+    for (int i = 0; i < a; i++)
+    {
+        std::cout << car[i] << '\n';
+    }
+}
+
+#include <iostream>
+
+int main()
+{
+
+    std::string car[] = {"Toyota", "Honda", "Ford", "Chevrolet", "Nissan"};
+
+    // std::string is an object that manages memory dynamically
+    
+    // so we can use sizeof() to get the size of the array in bytes 
+    
+    // it does not return the length of the string’s content 
+    // (e.g., "Toyota" has 6 characters) but rather the fixed size of the 
+    // std::string object itself (which typically is around 32 bytes, 
+    // though this depends on the system and compiler).
+
+    std::cout << car[0] << '\n';
+    std::cout << car[1] << '\n';
+    std::cout << car[2] << '\n';
+    std::cout << car[3] << '\n';
+
+    std::cout << '\n';
+    std::cout << "........................................." << '\n';
+    std::cout << '\n';
+
+    int a = sizeof(car) / sizeof(car[0]);
+    for (int i = 0; i < a; i++)
+    {
+        std::cout << car[i] << '\n';
+    }
+}
+
+
+#include <iostream>
+
+int main (){
+    // sizeof() returns the number of elements in the array
+
+    int a = 1946;
+    char ch = 'A';
+    float f = 3.14f;
+    double d = 3.14159;
+    std::string str = "Hello, World!";
+    bool b = true;
+    int arr[5] = {1, 2, 3, 4, 5};
+
+    std::cout<<'\n';
+    std::cout << "Size of int: " << sizeof(a) << " bytes\n";
+    std::cout<<'\n';
+    std::cout << "Size of char: " << sizeof(ch) << " bytes\n";
+    std::cout<<'\n';
+    std::cout << "Size of float: " << sizeof(f) << " bytes\n";
+    std::cout<<'\n';
+    std::cout << "Size of double: " << sizeof(d) << " bytes\n";
+    std::cout<<'\n';
+    std::cout << "Size of string: " << sizeof(str) << " bytes\n";
+    std::cout<<'\n';
+    std::cout << "Size of bool: " << sizeof(b) << " bytes\n";
+    std::cout<<'\n';
+    std::cout << "Size of array: " << sizeof(arr) << " bytes\n";
+    std::cout<<'\n';
+    std::cout << "Size of std::string : " << sizeof(std::string) << " bytes\n";
+    std::cout<<'\n';
+}
+
+
+#include <iostream>
+
+// for each loop is used to iterate over elements in a container (like an array or vector)
+// without needing to use an index. It simplifies the syntax and makes the code cleaner 
+// and easier to read.
+
+int main(){
+    int grades[5] = {90, 85, 78, 92, 88};
+
+    for(int grade : grades){
+        std::cout << "Grade: " << grade << '\n';
+    }
+    std::cout<<'\n';
+}
+
+
+#include <iostream>
+
+double gettotal(double prices[]);
+// Function to calculate the total price of items in an array   
+
+double gettotal(double prices[])
+{
+    double total = 0.0;
+
+    // Using a for loop to iterate over the array and calculate the total price
+    // The loop runs 5 times, once for each element in the array.               
+        
+    for (int i = 0; i < 5; i++)
+    {
+        total += prices[i];
+    }
+    
+    return total;
+}
+
+int main()
+{
+
+    double prices[] = {19.99, 29.99, 39.99, 49.99, 59.99};
+
+    double total = gettotal(prices);
+    std::cout << "Total: " << total << " $"<< '\n';
+    std::cout << '\n';
+
+
+    return 0;
+}
+
+
+#include <iostream>
+
+
+int search(int num[], int size, int my_num)
+{
+    // Function to search for an element in an array    
+    // The function takes an array, its size, and the number to search for
+    // as parameters.   
+
+    // It returns the index of the element if found, or -1 if not found.
+
+    // The function uses a for loop to iterate over the array and compare 
+    // each element with the target number.  
+    for (int i = 0; i < size; i++)
+    {
+        if (num[i] == my_num)
+        {
+            return i;
+        }
+    }
+    return -1; // not found
+}
+
+
+int main()
+{
+
+    int num[] = {1, 2, 3, 4, 5};
+    int size = sizeof(num) / sizeof(num[0]);
+
+    int index;
+    int my_num;
+
+    std::cout << "entrer element to search :";
+    std::cin >> my_num;
+
+    int searching = search(num , size , my_num);
+    
+    // The search function is called with the array, its size, and the 
+    // number to search for.    
+    
+    // The result is stored in the variable searching. 
+
+    if (searching != -1)// If the element is found, the index is printed.
+    {
+        std::cout << "Element found at index: " << searching << '\n';
+    }
+    else
+    // If the element is not found, a message is printed indicating 
+    // that the element was not found.
+    {
+        std::cout << "Element not found" << '\n';
+    }
+
+    return 0;
+}
+
+
+#include <iostream>
+
+// int get_array();
+// int get_array(int ele){
+// }
+
+void sort();
+void sort(int arr[], int size)
+{
+    int i;
+    for (i = 0; i < size - 1; i++)
+    { // Loop to iterate through the array
+        for (int j = 0; j < size - i - 1; j++)
+        { // Loop to compare adjacent elements
+            if (arr[j] > arr[j + 1])
+            {
+                arr[j] = arr[j + 1] ^ arr[j];
+                arr[j + 1] = arr[j + 1] ^ arr[j];
+                arr[j] = arr[j + 1] ^ arr[j]; // Swap the elements if they are in the wrong order
+            }
+        }
+    }
+    std::cout << "Sorted array: ";
+    for (int k = 0; k < size; k++)
+    {
+        std::cout << arr[k] << " "; // Print the sorted array
+    }
+}
+
+int main()
+{
+    int ele;
+    std::cout << "Enter the number of elements: ";
+    std::cin >> ele;
+
+    int arr[ele]; // Declare an array of size ele
+    for (int i = 0; i < ele; i++)
+    {
+        std::cout << "Enter element " << i + 1 << ": ";
+        std::cin >> arr[i]; // Store the elements in the array
+    }
+    std::cout << "Unsorted array: ";
+    for (int i = 0; i < ele; i++)
+    {
+        std::cout << arr[i] << " "; // Print the unsorted array
+    }
+    std::cout << std::endl;
+
+    int size = sizeof(arr) / sizeof(arr[0]); // Calculate the size of the array
+    sort(arr, size);                         // Call the sort function with the array and its size
+}
+
+
+#include <iostream>
+
+int main(){
+    //fill() = fills the array with a value
+    //fill_n() = fills the array with a value for n times       
+
+    std::string food[100];
+
+    fill(food, food + 100, "pizza"); // syntax for fill() = fill(start, end, value)
+
+    for (std::string i : food){
+        std::cout << i << '\n';
+    }
+    return 0;
+}
+
+
+#include <iostream>
+
+int main(){
+
+    std::string name = "John Doe";
+    int age = 30;
+    bool working = true;
+
+    std::cout << &name << '\n'; // Address of name
+    std::cout << &age << '\n'; // Address of age    
+    std::cout << &working << '\n'; // Address of working
+
+}
+
+
+#include <iostream>
+
+//pass by value
+// The function swap takes two strings as parameters and swaps their values
+void swap(std::string a, std::string b) {
+    std::string temp = a; // Store the value of a in a temporary variable
+    a = b;               // Assign the value of b to a
+    b = temp;           // Assign the value of temp (original a) to b
+}
+
+// pass by reference
+void swap1(std::string &a, std::string &b) {
+    std::string temp = a; // Store the value of a in a temporary variable
+    a = b;               // Assign the value of b to a
+    b = temp;           // Assign the value of temp (original a) to b
+}
+
+int main(){
+
+    std::string name = "John Doe";
+    std::string name1 = "Mr Otter";
+    
+    std::cout << "name before swap: " <<std::endl;
+    std::cout << "Name: " << name << '\n'; // Print the name
+    std::cout << "Name1: " << name1 << '\n'; // Print the name1
+
+    swap(name, name1); // Swap the values of name and name1 using the swap function
+    
+    std::cout << std::endl;
+    
+    std::cout << "name after pass by value swap: " <<std::endl;
+    std::cout << "Name: " << name << '\n'; // Print the swapped name    
+    std::cout << "Name1: " << name1 << '\n'; // Print the swapped name1
+
+    swap1(name, name1); // Swap the values of name and name1 using the swap1 function
+
+    std::cout << std::endl;
+    
+    std::cout << "name after pass by reference swap: " <<std::endl;
+    std::cout << "Name: " << name << '\n'; // Print the swapped name
+    std::cout << "Name1: " << name1 << '\n'; // Print the swapped name1
+}
+
+
+#include <iostream>
+
+int main(){
+    // pointres
+    // &# = address of operator
+    // * = dereference operator
+
+    std::string name = "John Doe";
+   
+    std::string *ptr = &name; // Pointer to the address of name
+    std::cout << "Address of name: " << &name << '\n'; 
+
+    std::string free_pizza[5] = {"pepperoni", "cheese", "veggie", "meat lovers", "hawaiian"}; // Array of strings   
+    std::string *ptr1 = free_pizza; // Pointer to the first element of the array
+
+    //name of an array is a pointer to the first element of the array
+    std::cout << "Address of free_pizza: " << &free_pizza << '\n'; // Address of the array  
+    std::cout << "Address of free_pizza: " << free_pizza << '\n'; // Address of the array  
+
+
+}
+
+
+#include <iostream>
+
+int main (){
+    //  null pointer = a pointer that does not point to any object or function
+    //  dangling pointer = a pointer that points to a memory location that has been freed or deleted
+    //  wild pointer = a pointer that has not been initialized to point to a valid memory location  
+    //  smart pointer = a pointer that automatically manages the memory of the object it points to  
+    //  unique pointer = a smart pointer that owns a single object and cannot be shared with other pointers
+    //  shared pointer = a smart pointer that can be shared with other pointers and keeps track of the number of references to the object it points to
+    //  weak pointer = a smart pointer that does not affect the reference count of the object it points to  
+    //  auto pointer = a smart pointer that automatically deletes the object it points to when it goes out of scope
+    //  reference pointer = a pointer that refers to an object or function and does not own it
+    //  function pointer = a pointer that points to a function and can be used to call the function
+    //  array pointer = a pointer that points to an array and can be used to access the elements of the array
+    //  pointer to pointer = a pointer that points to another pointer and can be used to access the value of the pointer it points to
+    //  pointer to function = a pointer that points to a function and can be used to call the function
+    //  pointer to array = a pointer that points to an array and can be used to access the elements of the array
+    //  pointer to structure = a pointer that points to a structure and can be used to access the members of the structure
+
+
+    int * ptr = nullptr; // null pointer
+    
+    int x = 10; 
+    int * ptr1 = &x; // pointer to x
+
+    if(ptr1 != nullptr) // check if ptr1 is not null
+    {
+        std::cout << "address assigned succesfully " << '\n'; // 
+    }
+    else
+    {
+        std::cout << "address not assigned" << '\n'; // out of memory
+    }
+
+
+    std::cout << std::endl;
+    std::cout << "address of x: " << &x << '\n'; // address of x
+    std::cout << std::endl;
+    std::cout << "address of x: " << ptr1 << '\n'; // address of ptr1
+    std::cout << std::endl;
+    std::cout << "address of ptr1: " << &ptr1 << '\n'; // address of ptr1
+    std::cout << std::endl;
+    std::cout << "value of x: " << *ptr1 << '\n'; // value of x
+    std::cout << std::endl;
+    std::cout << "value of x: " << x << '\n'; // value of ptr1
+    std::cout << std::endl;
+    std::cout << "value pointed by ptr1: " << *ptr1 << '\n'; // value of ptr1
+    std::cout << std::endl;
+    
+    return 0; // return 0 to indicate success
+}
+
+
+#include <iostream>
+
+int main()
+{
+    // dynamic memory = memory that is allocated at runtime using the new operator
+    int *ptr = nullptr; // Allocate memory for an integer
+
+    ptr = new int; // Allocate memory for an integer
+    *ptr = 10;     // Assign a value to the allocated memory
+
+    std::cout << "Value of ptr: " << *ptr << '\n';  // Print the value of the allocated memory
+    std::cout << "Address of ptr: " << ptr << '\n'; // Print the address of the allocated memory
+
+    delete ptr;    // Deallocate the memory
+    ptr = nullptr; // Set the pointer to null to avoid dangling pointer
+
+
+    
+    std::cout << "enter the number of grades: " ; // Prompt the user to enter the number of grades"
+    int num_grades;
+    std::cin >> num_grades; // Read the number of grades from the user
+    
+    std::cout << '\n'; // Print a newline character
+
+    char *grade = nullptr;        // Allocate memory for a character
+    grade = new char[num_grades]; // Allocate memory for a character
+
+    for (int i = 0; i < num_grades; i++) // Loop to read the grades from the user
+    {
+        std::cout << "Enter grade " << i + 1 << ": "; // Prompt the user to enter a grade
+        std::cin >> grade[i];                         // Read the grade from the user
+    }
+
+    std::cout << '\n'; // Print a newline character
+
+    for (int i = 0; i < num_grades; i++) // Loop to print the grades
+    {
+        std::cout << "Grades " << i+1 << " : " << grade[i] << " \n"; // Print the grade
+
+    }
+    std::cout << '\n'; // Print a newline character
+
+    delete[] grade; // Deallocate the memory for the grades
+    grade = nullptr; // Set the pointer to null to avoid dangling pointer
+}
