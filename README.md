@@ -117,8 +117,9 @@ To run the examples in this repository, you will need:
 
 1. **Clone the repository**:
 
-   git clone https://github.com/VOID-3560/cpp_codes/tree/core
-   cd cpp-learning
+   - git clone https://github.com/VOID-3560/cpp_codes/tree/core
+   - git clone https://github.com/Languages-And-Structures/cpp-dev
+   - cd cpp-learning
    
 2. Compile and run a program:
    
