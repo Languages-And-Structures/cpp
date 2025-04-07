@@ -90,3 +90,38 @@ int main() {
 // → fib(1) + fib(0) + 1 + 1 + 1 + 1 + 1 + 1
 // → 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1
 
+
+//EG 4 
+
+//int findMax(int* arr, int size){
+//  if (size == 1) return arr[0]; // base case: only one element
+//  if (arr[size - 1] > arr[size - 2]) {arr[size - 2] = arr[size - 1]};
+//  return findMax(arr, size - 1); // recursive call with reduced size
+
+
+//
+//
+//
+//
+//
+
+//EG 5
+
+// void printReverse(int* arr, int size){
+//     if (size == 0) return; // base case: no elements left to print
+//     std::cout << arr[size - 1] << " "; // print last element 
+//     printReverse(arr, size - 1); // recursive call with reduced size}
+
+//EG 6
+
+// int countOccurrences(int* arr, int size, int x);
+//     if (size == 0) return 0; // base case: no elements left to check
+//     if (arr[size - 1] == x) 
+//      return 1 + countOccurrences(arr, size - 1, x); // found x, count it
+
+//EG 7
+
+// void printEvens(int* arr, int size);
+//     if (size == 0) return; // base case: no elements left to check
+//     if (arr[size - 1] % 2 == 0) std::cout << arr[size - 1] << " "; // print even number  
+//     printEvens(arr, size - 1); // recursive call with reduced size
